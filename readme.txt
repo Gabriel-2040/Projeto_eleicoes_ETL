@@ -15,7 +15,7 @@ Os arquivos da base de dados se encontram na pasta ./_1_modelo_conceitual
 ###Modelo Conceitual
 
 <p align="center">
-  <img src="E:\PYTHON\CURSOS\10_Digital_College\da16\ETL\Projeto_eleicoes_ETL\_9_imagens\brmodelo.JPG" alt="brmodelo" />
+  <img src="https://github.com/Gabriel-2040/Projeto_eleicoes_ETL/blob/main/_9_imagens/brmodelo.JPG" alt="brmodelo" />
 </p>
 
 - Nessa etapa também foi decido que gostaria de mostrar uma analise interativa, com mapas, para poder ter acesso a uma análise por zona
@@ -28,7 +28,7 @@ Os arquivos se encontram na pasta ./_2_base_de_dados
 ###Base de Dados
 
 <p align="center">
-  <img src="E:\PYTHON\CURSOS\10_Digital_College\da16\ETL\Projeto_eleicoes_ETL\_9_imagens\base de dados.JPG" alt="base de dados" />
+  <img src="https://github.com/Gabriel-2040/Projeto_eleicoes_ETL/blob/main/_9_imagens/base de dados.JPG" alt="base de dados" />
 </p>
 
 
@@ -39,7 +39,7 @@ que não eram UTF-8. Assim para não se precisar ficar testando uma por uma se u
 o separador.
 
 <p align="center">
-  <img src="E:\PYTHON\CURSOS\10_Digital_College\da16\ETL\Projeto_eleicoes_ETL\_9_imagens\python codigo separador.JPG" alt="python codigo separador" />
+  <img src="https://github.com/Gabriel-2040/Projeto_eleicoes_ETL/blob/main/_9_imagens/python codigo separador.JPG" alt="python codigo separador" />
 </p>
 
 Após a se saber a codificação foi usado o pentahoo para se fazer as dimensões. Muito prático na escolha dos dados e criação e manipulação das tabelas.
@@ -68,7 +68,7 @@ tabelas fato:
 Isso dominuiu a quantidade de joins na hora da carga nas tabelas e me resolveu o problema dos mapas também.
 
 <p align="center">
-  <img src="E:\PYTHON\CURSOS\10_Digital_College\da16\ETL\Projeto_eleicoes_ETL\_9_imagens\tabelas fato.JPG" alt="tabelas fato" />
+  <img src="https://github.com/Gabriel-2040/Projeto_eleicoes_ETL/blob/main/_9_imagens/tabelas fato.JPG" alt="tabelas fato" />
 </p>
 
 Outra dificuldade  que surgiu foi que atributo usar para se montar um mapa interativo. O uso de latitude e longitude não deu certo pois nem todas as zonas
@@ -81,14 +81,14 @@ com as tabelas vindas do banco de dados.
 Os mapas foram adquiridos no site do IBGE.
 
 <p align="center">
-  <img src="E:\PYTHON\CURSOS\10_Digital_College\da16\ETL\Projeto_eleicoes_ETL\_9_imagens\mapas json.JPG" alt="mapas json" />
+  <img src="https://github.com/Gabriel-2040/Projeto_eleicoes_ETL/blob/main/_9_imagens/mapas json.JPG" alt="mapas json" />
 </p>
 
 #### Respostas Iniciais
 Antes de se levar os dados para o powerbi foram feitas algumas views na postgres para verificar e reponder as perguntas iniciais:
 
 <p align="center">
-  <img src="E:\PYTHON\CURSOS\10_Digital_College\da16\ETL\Projeto_eleicoes_ETL\_9_imagens\views.JPG" alt="views" />
+  <img src="https://github.com/Gabriel-2040/Projeto_eleicoes_ETL/blob/main/_9_imagens/views.JPG" alt="views" />
 </p>
 
 Uma aprendizado muito legal nessa etapa foi a clausula "row_number / over /partition by / order by /rank" no postgres. Ela me proporciona atribuir um numero sequencial
@@ -96,7 +96,7 @@ Uma aprendizado muito legal nessa etapa foi a clausula "row_number / over /parti
 Essa instrução foi usada em outras views;
 
 <p align="center">
-  <img src="E:\PYTHON\CURSOS\10_Digital_College\da16\ETL\Projeto_eleicoes_ETL\_9_imagens\rank.JPG" alt="rank" />
+  <img src="https://github.com/Gabriel-2040/Projeto_eleicoes_ETL/blob/main/_9_imagens/rank.JPG" alt="rank" />
 </p>
 
 #### PowerBi
@@ -106,7 +106,7 @@ comecei a minuplar e montar os paineis.
 Assim ficou o relacional do powerbi:
 
 <p align="center">
-  <img src="E:\PYTHON\CURSOS\10_Digital_College\da16\ETL\Projeto_eleicoes_ETL\_9_imagens\relacional_bi.JPG" alt="relacional_bi" />
+  <img src="https://github.com/Gabriel-2040/Projeto_eleicoes_ETL/blob/main/_9_imagens/relacional_bi.JPG" alt="relacional_bi" />
 </p>
 
 Os paineis ficaram nessa sequencia:
@@ -117,7 +117,7 @@ Os paineis ficaram nessa sequencia:
             1.3 - Estados
 
     <p align="center">
-  <img src="E:\PYTHON\CURSOS\10_Digital_College\da16\ETL\Projeto_eleicoes_ETL\_9_imagens\eleicoes_01.JPG" alt="eleicoes_01" />
+  <img src="https://github.com/Gabriel-2040/Projeto_eleicoes_ETL/blob/main/_9_imagens/eleicoes_01.JPG" alt="eleicoes_01" />
     </p>
 
     2 - Página : Brasil - Pagina com dados nivel brasil(dados gerais).
@@ -127,7 +127,7 @@ Os paineis ficaram nessa sequencia:
                         Partidos com mais votos em 1 turno
     
        <p align="center">
-  <img src="E:\PYTHON\CURSOS\10_Digital_College\da16\ETL\Projeto_eleicoes_ETL\_9_imagens\eleicoes_02.JPG" alt="eleicoes_02" />
+  <img src="https://github.com/Gabriel-2040/Projeto_eleicoes_ETL/blob/main/_9_imagens/eleicoes_02.JPG" alt="eleicoes_02" />
     </p>
         
     3 - Página : Região - Pagina com dados nivel das regiões do brasil(norte, nordeste, centroeste, sudeste, sul).
@@ -136,7 +136,7 @@ Os paineis ficaram nessa sequencia:
                         Partido com mais votos na regiao.
     
       <p align="center">
-  <img src="E:\PYTHON\CURSOS\10_Digital_College\da16\ETL\Projeto_eleicoes_ETL\_9_imagens\eleicoes_03.JPG" alt="eleicoes_03" />
+  <img src="https://github.com/Gabriel-2040/Projeto_eleicoes_ETL/blob/main/_9_imagens/eleicoes_03.JPG" alt="eleicoes_03" />
     </p>
 
     4 - Página : Estados - Pagina com dados dos Estados.
@@ -146,7 +146,7 @@ Os paineis ficaram nessa sequencia:
             Aqui no seletor de estados pode ser dado um clique no estado, que será direcionado para uma pagina como estados e seus municipios.
 
  <p align="center">
-  <img src="E:\PYTHON\CURSOS\10_Digital_College\da16\ETL\Projeto_eleicoes_ETL\_9_imagens\eleicoes_04.JPG" alt="eleicoes_04" />
+  <img src="https://github.com/Gabriel-2040/Projeto_eleicoes_ETL/blob/main/_9_imagens/eleicoes_04.JPG" alt="eleicoes_04" />
     </p>
 
         4.1- Pagina : Estado(selecionado)
@@ -155,7 +155,7 @@ Os paineis ficaram nessa sequencia:
                         - Ao selecionar o turno mostra onde houve vencedor em 1 turno. Se no mapa  ficar sem cor é que houve segundo turno.
         
              <p align="center">
-  <img src="E:\PYTHON\CURSOS\10_Digital_College\da16\ETL\Projeto_eleicoes_ETL\_9_imagens\eleicoes_05.JPG" alt="eleicoes_05" />
+  <img src="https://github.com/Gabriel-2040/Projeto_eleicoes_ETL/blob/main/_9_imagens/eleicoes_05.JPG" alt="eleicoes_05" />
     </p>
 
             4.2 - Página Municipio : Zonas eleitorias ( Em desenvolvimento)
@@ -163,7 +163,7 @@ Os paineis ficaram nessa sequencia:
                   Respostas: Aqui se chaga na útlima instância. Onde se verifica a quantidade de votos que cada partido teve por zona.
                               Pagina ainda em desenvolvimento.
        <p align="center">
-  <img src="E:\PYTHON\CURSOS\10_Digital_College\da16\ETL\Projeto_eleicoes_ETL\_9_imagens\eleicoes_06.JPG" alt="eleicoes_06" />
+  <img src="https://github.com/Gabriel-2040/Projeto_eleicoes_ETL/blob/main/_9_imagens/eleicoes_06.JPG" alt="eleicoes_06" />
     </p>
 
 #### QGIS
@@ -173,7 +173,7 @@ Como nãotinha achado um mapa json  ou geojson com as zonas, peguei uma imagem d
 e transformei em um json, atribuido valores aos poligonos de acordo com o banco de dados.
 
 <p align="center">
-  <img src="E:\PYTHON\CURSOS\10_Digital_College\da16\ETL\Projeto_eleicoes_ETL\_9_imagens\qgis.JPG" alt="qgis" />
+  <img src="https://github.com/Gabriel-2040/Projeto_eleicoes_ETL/blob/main/_9_imagens/qgis.JPG" alt="qgis" />
 </p>
 
 
