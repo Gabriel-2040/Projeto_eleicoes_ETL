@@ -1,0 +1,1 @@
+csv com os partidos com suas datas de criação e encerramento.
