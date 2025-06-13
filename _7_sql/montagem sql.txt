@@ -1,0 +1,94 @@
+aa_eleicao,INT 2008,2016,2020, 2024 
+#( não entra pois ja vai ter o date)
+
+"cd_tipo_eleicao", "2", 
+#(só esse tipo de eleição) não usar
+
+"nm_tipo_eleicao","Eleição Ordinária" 
+#(só esse tipo de eleição) não usar
+
+"cd_eleicao",,220,(tem 10 tipos de cd_eleição)integer
+#(só esse tipo de eleição) não vi relevancia para usar
+
+"ds_eleicao","Eleições Municipais 2016",
+#(5 tipos de ds_eleicao varchar 100)
+# não é necessário pois ja vai ter a datas
+
+"dt_eleicao","2016-10-02",
+#(10 datas tipo date)
+
+"sg_uf","SP",(26 estados character varying (2)
+#usar
+"cd_municipio", 71072 (5568 codigos tipo big int)
+#municipios tem códigos. pode ser interessante por ser integer agilzia na busca
+
+"nm_municipio", ,"SÃƒO PAULO", 
+#(5326 municipios, por contagem distinta)
+#quando faz o select com cd_municipio e nm_municipio tem 5602 
+# tem que ver melhor esses selects
+
+"nr_zona", 320,(426 zonas integer)
+# ja vi que tem tabelas nos TRE de cada estado que tem 
+# os numeros das zonas associados a cep.
+
+"nm_local_votacao", "EMEF PROFESSOR NELSON PIMENTEL QUEIROZ",
+(140487 locais de votacao)
+# existe duplicidade nos nomes dos locais de votação
+
+"ds_local_votacao_endereco", "AV,  LEONARDO DA VINCCI, 1371", 
+# existem nulos no ds_local_votacao_endereco 
+# dessa forma usar o numero da zona com o cep seria melhor
+
+"nr_secao", 110,(1159 integer)
+#numero da secao e o numero da zona com o cep nos da uma
+o numero de pessoas por regiao micro e macro.
+
+"nr_local_votacao", "1074",( 351 big int)
+#essa numeração é uma identificação do local de votação.
+#ela pode ter mais de um endereço ou local.
+
+"cd_modelo_urna","2008",(9 modelos de urna big int)n
+"ds_modelo_urna","UE 2008",( 10 modelos contem nulos, character varying(20)
+#não vejo o que analisar no modelo da urna
+
+"nr_turno",1, ( 2 tipos e integer)
+#usar
+
+"ds_cargo","Prefeito",(só existe prefeito)
+*não vejo necessidade de usar
+
+"nr_votavel","96",(38 numeros de candidatos big int)
+# è a legenda do partido
+
+"nm_votavel",
+#(aqui entra os VOTO NULO, VOTO BRANCO E OS NOMES dos candidatos4
+
+"sq_candidato",(somente dados nulos)
+*não inserir
+
+"qt_aptos",360,INT 2008, (tab fato integer)
+"qt_comparecimento", 286,(tab fato integer)
+"qt_abstencoes",74,(tab fato integer)
+"qt_votos_nominais",249,( tab fato integer)
+"qt_votos", 30, (tab fato integer)
+"dt_carga", "2021-07-14",(datas tipo date)
+
+"qt_registros" 1(não vai)
+
+#observações
+a tabela ela separa por secção, quantidade apta para a seceao o numero de abstenções por secao
+qt_aptos = qt_comparecimento + qt_abstencoes
+as abstencões são pessoa que não foram votar
+qt_comparecimento = qt_votos_nominais + qt_votos
+no comparecimento entra o nm_votavel ("VOTO NULO" E "VOTO BRANCO") 
+qt_votos = qtd que votou só na legenda
+
+*As Seções Eleitorais são os locais de votação, onde se 
+encontram as urnas eletrônicas e as mesas receptoras de votos, 
+compostas por mesários nomeados pelo juiz eleitoral. É na Seção
+que a Justiça Eleitoral checa a documentação das eleitoras e 
+dos eleitores, orientando-os sobre os procedimentos corretos 
+para o exercício do voto. 
+
+
+
