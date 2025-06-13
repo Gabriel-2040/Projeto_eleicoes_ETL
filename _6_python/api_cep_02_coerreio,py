@@ -1,0 +1,25 @@
+import pandas as pd
+from brazilcep import get_address_from_cep
+
+# Carregar o arquivo CSV
+file_path = r'E:\PYTHON\CURSOS\10_Digital_College\ETL\projeto etl\python\data-1733797906226.csv'  # Substitua pelo caminho do seu arquivo
+df = pd.read_csv(file_path)
+
+# Certifique-se de que a coluna do endereço esteja nomeada corretamente
+address_column = 'ds_endereco'  # Nome da coluna com os endereços
+
+# Função para buscar CEP
+def fetch_cep(row):
+    try:
+        address = get_address_from_cep(row)
+        return address['cep']
+    except Exception as e:
+        return f"Erro: {str(e)}"
+
+# Criar uma nova coluna para armazenar os CEPs encontrados
+df['cep_encontrado'] = df[address_column].apply(fetch_cep)
+
+# Salvar os resultados em um novo arquivo
+df.to_csv('resultado_com_ceps.csv', index=False)
+
+print("Processo concluído. Verifique o arquivo 'resultado_com_ceps.csv'.")
