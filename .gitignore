@@ -1,0 +1,13 @@
+# Ignorar arquivos específicos
+eleicoes.backup
+perfil_eleitorado_2008.csv
+eleitorado_local_votacao_2024.csv
+eleitorado_local_votacao_2020.csv
+eleitorado_local_votacao_2016.csv
+eleitorado_local_votacao_2012.csv
+eleitorado_local_votacao_2008.csv
+BR_tratado.json
+BR_s_acento.json
+BR_Municipios_2023.shp
+./vscode
+
