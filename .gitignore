@@ -10,4 +10,10 @@ BR_tratado.json
 BR_s_acento.json
 BR_Municipios_2023.shp
 ./vscode
-
+api_cep_lat_long_Brazilcep.py
+api_cep_lat_long_geocode.py
+api_cep.py
+api_end_cep_geocode.py
+api_cep_02_coerreio.py
+cep_lat_long.py
+teste.py
