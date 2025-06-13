@@ -12,7 +12,7 @@ Nessa disciplina aprendemos a utilizar o Pentaho e SQL que deverão ser as ferra
 um modelo conceitual no brmodelo. Onde decidi que dimensões do datawarehouse criar para responder as minhas perguntas.
 Os arquivos da base de dados se encontram na pasta ./_1_modelo_conceitual
 
-###Modelo Conceitual
+### Modelo Conceitual
 
 <p align="center">
 <img src="https://github.com/Gabriel-2040/Projeto_eleicoes_ETL/blob/main/_9_imagens/brmodelo.JPG" alt="brmodelo" />
@@ -25,7 +25,7 @@ algumas colunas que não estavam na base atual poderiam complementar e ser usado
 a base recebida, com os campos que houvessem chave de ligação. 
 Os arquivos se encontram na pasta ./_2_base_de_dados
 
-###Base de Dados
+### Base de Dados
 
 <p align="center">
 <img src="https://github.com/Gabriel-2040/Projeto_eleicoes_ETL/blob/main/_9_imagens/base de dados.JPG" alt="base de dados" />
