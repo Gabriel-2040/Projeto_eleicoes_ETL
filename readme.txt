@@ -49,21 +49,21 @@ e o uso em tabelas maiores e na sequencia da criação da tabela fato foi usado 
 Como passou-se a usar mais o pentaho se tornou (pesado) para a quantidade de movimentação de dados ficou sendo usado o sql.
 A montagem da tabela fato gerou muitos problemas por conta da quantiade de dados, chaves estangeiras etc. Uma solução adotada foi fazer duas
 tabelas fato:
-- fato_eleicao          |   - fato_endereço
-- id          | - id 
-- fk_aa_eleição          | - ds_endereco
-- fk_sg_uf          | - fk_id_cep
-- fk_id_municipio          |  - fk_id_municipio
-- fk_nr_zona          | - fk_sg_uf
-- fk_nr_turno          |  - fk_id_bairro
-- fk_nr_votavel          | - fk_id_zona
-- nm_votavel          | - fk_id_zona
-- qt_aptos          | - fk_id_zona
-- qt_comparecimentos          |  - fk_id_ano
-- qt_abstenções          |
-- qt_votos_nominais          |
-- qt_votos_nominais          |
-- dt_carga          |
+- fato_eleicao          | - fato_endereço
+- id                    | - id 
+- fk_aa_eleição         | - ds_endereco
+- fk_sg_uf              | - fk_id_cep
+- fk_id_municipio       | - fk_id_municipio
+- fk_nr_zona            | - fk_sg_uf
+- fk_nr_turno           | - fk_id_bairro
+- fk_nr_votavel         | - fk_id_zona
+- nm_votavel            | - fk_id_zona
+- qt_aptos              | - fk_id_zona
+- qt_comparecimentos    | - fk_id_ano
+- qt_abstenções         |
+- qt_votos_nominais     |
+- qt_votos_nominais     |
+- dt_carga              |
 
 Isso dominuiu a quantidade de joins na hora da carga nas tabelas e me resolveu o problema dos mapas também.
 
