@@ -2031,7 +2031,7 @@
                     "type": "Polygon",
                     "properties": {
                         "id": null,
-                        "nr_zona": 1,
+                        "nr_zona":1,
                         "path": "zona 1.shp"
                     }
                 },
