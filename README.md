@@ -2,13 +2,12 @@
 ### Professor Ronathan
 ## Base de dados : TSE / IBGE
 #### Entendimento do Negócio
-Essa base do TSE, das eleições para prefeito no Brasil, no periodo que vai de 2008,2012,2016 e 2020. Abase original recebida pelo Professor
-são todos os anos juntos e tem um total de 12117886 de linhas.
+Essa base do TSE, das eleições para prefeito no Brasil, no periodo que vai de 2008,2012,2016 e 2020. A base original recebida pelo Professor é formada plor todos os anos juntos e com um total de 12117886 de linhas.
 A proposta desse trabalho é tirar conclusões sobre os partidos mais votados, por ano, estado, zona, graduação de votos (se aumentou ou diminuiu).
 Nessa disciplina aprendemos a utilizar o Pentaho e SQL que deverão ser as ferramentas principais para o tratamento dos dados.
 
 ## Etapa de Analise / Decisão.
-- Esse projeto se iniciou com as decisões sobre que caminhos tomar e o que mostrar na análise. Em primeiro lugar foi montado
+- Esse projeto iniciou com as decisões sobre que caminhos tomar e o que mostrar na análise. Em primeiro lugar foi montado
 um modelo conceitual no brmodelo. Onde decidi que dimensões do datawarehouse criar para responder as minhas perguntas.
 Os arquivos da base de dados se encontram na pasta ./_1_modelo_conceitual
 
