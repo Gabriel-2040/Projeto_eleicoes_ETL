@@ -7,8 +7,8 @@ def connect_db():
         host="localhost",  # Substitua pelo seu host
         port="5433",  # Substitua pelo seu porto (geralmente 5432)
         dbname="da_16_etl",  # Substitua pelo seu nome de banco de dados
-        user="postgres",  # Substitua pelo seu nome de usuário
-        password="1234"  # Substitua pela sua senha
+        user="xxxx",  # Substitua pelo seu nome de usuário
+        password="xxxx"  # Substitua pela sua senha
     )
 
 def get_data():
